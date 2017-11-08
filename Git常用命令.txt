@@ -1,20 +1,20 @@
 git 常用命令
 
 一 、仓库创建：
- 1. mkdir XXX			创建XXX文件夹/创建文件
- 2. pwd					用于显示当前目录
- 3. git init			把当前目录变成Git可以管理的仓库
+ 1. mkdir XXX————创建XXX文件夹/创建文件
+ 2. pwd	————用于显示当前目录
+ 3. git init————把当前目录变成Git可以管理的仓库
 
 二 、提交：
- 4. git add XXX			把XXX文件添加到仓库
- 5. git commit -m "xxx"	把文件提交到仓库, -m后面输入的是本次提交的说明, 为什么Git添加文件需要add，commit一共两步呢？因为commit可以一次提交很多文件，所以可以多次add一次性commit
+ 4. git add XXX————把XXX文件添加到仓库
+ 5. git commit -m "xxx"	————把文件提交到仓库, -m后面输入的是本次提交的说明, 为什么Git添加文件需要add，commit一共两步呢？因为commit可以一次提交很多文件，所以可以多次add一次性commit
 
 三 、状态信息查看：
- 6. git status   		查看仓库当前的状态				(是否有未提交的更改等)
- 7. git diff XXX    	查看（比较）XXX文件修改的内容			(查看对应文件做了什么修改)
+ 6. git status————查看仓库当前的状态				(是否有未提交的更改等)
+ 7. git diff XXX————查看（比较）XXX文件修改的内容			(查看对应文件做了什么修改)
 
 四 、版本控制：
- 8. git log --pretty=oneline			显示从最近到最远的提交日志，--pretty=oneline  一行显示
- 9. git reset --hard HEAD^				用HEAD表示当前版本， 上一个版本就是HEAD^， 上上一个版本就是HEAD^^， 往上100个版本写100个^比较容易数不过来，所以写成HEAD~100
-10. git reset --hard 3628164			回到指定的某个版本， 3628164 指commit id， 版本号
-11. git reflog							记录git操作的每一次命令
+ 8. git log --pretty=oneline————显示从最近到最远的提交日志，--pretty=oneline  一行显示
+ 9. git reset --hard HEAD^————用HEAD表示当前版本， 上一个版本就是HEAD^， 上上一个版本就是HEAD^^， 往上100个版本写100个^比较容易数不过来，所以写成HEAD~100
+10. git reset --hard 3628164 ————回到指定的某个版本， 3628164 指commit id， 版本号
+11. git reflog————记录git操作的每一次命令
